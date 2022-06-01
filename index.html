@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <script src="https://kit.fontawesome.com/a53736c1d3.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="./assets/css/jass.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+
+  <h2 class="text-primary">Search for a City:</h2>
+  <form id="search-form" class="form w-100">
+
+
+    <form>
+     <input type="text" id="cityName" placeholder="Enter a city name"><br>
+     <input type="submit" value="Get Weather Information" id="weather_data">
+    </form>
+
+
+
+  </form>
+
+  <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title" id="display_city"></h5>
+      <p class="card-text" id="display_temp"></p>
+      <p class="card-text" id="display_wind"></p>
+      <p class="card-text" id="display_humidity"></p>
+      <p class="card-text" id="display_uv"></p>
+    </div>
+  </div>
+
+
+
+
+
+  <h4><strong>5-Day Forecast:</strong></h4>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" id="day1">Card title</h5>
+          <img src="" class="card-text" id="img1" alt="...">
+          <p class="card-text" id="temp1"></p>
+          <p class="card-text" id="wind1"></p>
+          <p class="card-text" id="humidity1"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <img src="" class="card-text" id="img2" alt="...">
+          <p class="card-text" id="temp2"></p>
+          <p class="card-text" id="wind2"></p>
+          <p class="card-text" id="humidity2"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <img src="" class="card-text" id="img3" alt="...">
+          <p class="card-text" id="temp3"></p>
+          <p class="card-text" id="wind3"></p>
+          <p class="card-text" id="humidity3"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <img src="" class="card-text" id="img4" alt="...">
+          <p class="card-text" id="temp4"></p>
+          <p class="card-text" id="wind4"></p>
+          <p class="card-text" id="humidity4"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <img src="" class="card-text" id="img5" alt="...">
+          <p class="card-text" id="temp5"></p>
+          <p class="card-text" id="wind5"></p>
+          <p class="card-text" id="humidity5"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
