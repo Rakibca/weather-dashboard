@@ -1,7 +1,5 @@
-.btn {
-  display: block;
-  background-color: orange;
-  width: 250px;
+body {
+  background-color: #ffffcc;
 }
 
 h1 {
@@ -15,17 +13,16 @@ h2 {
 
 .singleBox {
   margin-left: 500px;
-margin-right: 100px;
+  margin-right: 100px;
 }
 
 .fiveBoxes {
   margin-left: 500px;
-margin-right: 100px;
+  margin-right: 100px;
 }
 
 .card {
   width: 100%;
-
 }
 
 .card-body {
@@ -37,13 +34,12 @@ margin-right: 100px;
 .heading {
   background-color: blue;
   color: white;
-
+  margin: 20px 20px;
 }
 
 #topBox {
-  background-color: #F6F1D1;
+  background-color: #99ccff;
   color: black;
-
 }
 
 .formSection {
@@ -54,3 +50,10 @@ margin-right: 100px;
 #displayName {
   font-size: 25px;
 }
+
+/* On screens that are 768px or less*/
+@media screen and (max-width: 768px) {
+  body {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
