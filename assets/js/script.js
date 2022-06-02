@@ -5,12 +5,22 @@ let day2 = moment().add(2, "days").format("l");
 let day3 = moment().add(3, "days").format("l");
 let day4 = moment().add(4, "days").format("l");
 let day5 = moment().add(5, "days").format("l");
-
-
 let weatherData = document.getElementById("weatherData");
+
+
 weatherData.addEventListener("click", function(event) {
   event.preventDefault();
   let cityName = document.getElementById("cityName").value;
+
+  //var element = document.querySelector("button-container");
+  var btn = document.createElement("button");
+  var t = document.createTextNode(cityName);
+  btn.setAttribute("style", "color:red;font-size:23px");
+  btn.appendChild(t);
+  document.body.appendChild(btn);
+  //btn.setAttribute("onclick", alert("clicked"));
+  //$("#button-container").addClass("btn");
+   //$("p:nth-child(5)").css("background-color", "yellow");
 
   console.log(cityName);
   localStorage.setItem("profile", cityName);
@@ -27,22 +37,15 @@ weatherData.addEventListener("click", function(event) {
 
 
 
-  // let btn = document.getElementsByClassName('btn');
-  // let container = document.getElementsByClassName('container');
-  //
-  // let action = function(e) {
-  //   // set up new button
-  //   let newBtn = document.createElement('button');
-  //   newBtn.innerHTML = 'this is has been clicked <span>0</span> times';
-  //
-  //
-  //   // get the current element's count
-  //   let numb = Number(e.target.children[0].innerHTML);
-  //   e.target.children[0].innerHTML = numb + 1;
-  // }
-  // for (let i = 0; i < btn.length; i++) {
-  //   btn[i].addEventListener('click', action);
-  // }
+
+  // var btn = document.createElement("BUTTON");
+  // var t = document.createTextNode("CLICK ME");
+  // btn.setAttribute("style", "color:red;font-size:23px");
+  // btn.appendChild(t);
+  // document.body.appendChild(btn);
+  // btn.setAttribute("onclick", alert("clicked"));
+
+
 
 
 
@@ -61,12 +64,12 @@ weatherData.addEventListener("click", function(event) {
       .then(function(data) {
         console.log(data);
 
-        document.getElementById("list-group-item1").innerHTML = data.name + "  " + "(" + dateToday + ")";
+        document.getElementById("displayName").innerHTML = data.name + "  " + "(" + dateToday + ")";
         //document.getElementById("img0").src = "http://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
-        document.getElementById("list-group-item2").innerHTML = "Temp: " + Number(data.main.temp).toFixed(1) + " °C";
-        document.getElementById("list-group-item3").innerHTML = "Wind: " + Number(data.wind.speed).toFixed(1) + " MPH";
-        document.getElementById("list-group-item4").innerHTML = "Humidity: " + Number(data.main.temp).toFixed(1) + " %";
-        document.getElementById("list-group-item5").innerHTML = "Humidity: " + Number(data.main.temp).toFixed(1) + " %";
+        document.getElementById("displayTemp").innerHTML = "Temp: " + Number(data.main.temp).toFixed(1) + " °C";
+        document.getElementById("displayWind").innerHTML = "Wind: " + Number(data.wind.speed).toFixed(1) + " MPH";
+        document.getElementById("displayHumidity").innerHTML = "Humidity: " + Number(data.main.temp).toFixed(1) + " %";
+        document.getElementById("displayUV").innerHTML = "UV Index: " + Number(data.main.temp).toFixed(1);
       })
       .catch(function(error) {
         console.log(error);
@@ -102,8 +105,3 @@ weatherData.addEventListener("click", function(event) {
       }
     })
 });
-
-
-// function displaySearchHist() {
-//
-// };

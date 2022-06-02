@@ -1,9 +1,56 @@
 .btn {
-  display:block;
+  display: block;
   background-color: orange;
   width: 250px;
 }
 
 h1 {
   text-align: center;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.singleBox {
+  margin-left: 500px;
+margin-right: 100px;
+}
+
+.fiveBoxes {
+  margin-left: 500px;
+margin-right: 100px;
+}
+
+.card {
+  width: 100%;
+
+}
+
+.card-body {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+.heading {
+  background-color: blue;
+  color: white;
+
+}
+
+#topBox {
+  background-color: #F6F1D1;
+  color: black;
+
+}
+
+.formSection {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#displayName {
+  font-size: 25px;
 }
